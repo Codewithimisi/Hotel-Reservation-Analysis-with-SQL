@@ -5,9 +5,9 @@ The hotel industry is heavily reliant on data to make informed decisions that en
 
 ## Methodology:
 
-- Data Exploration and Cleaning with excel: Initial exploration of the dataset to understand its structure and clean any inconsistencies.
-- SQL Queries: Development of SQL queries to extract relevant insights from the dataset.
-- Analysis: Interpretation of query results to answer key questions and identify trends.
+- **Data Exploration and Cleaning with excel**: Initial exploration of the dataset to understand its structure and clean any inconsistencies.
+- **SQL Queries**: Development of SQL queries to extract relevant insights from the dataset.
+- **Analysis**: Interpretation of query results to answer key questions and identify trends.
 
 ## Key Questions and Insights:
 

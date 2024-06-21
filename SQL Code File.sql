@@ -43,14 +43,14 @@ from hotelreservationdataset;
 
 -- 8)What is the most common market segment type for reservations? 
 select market_segment_type, 
-       count(market_segment_type) as most_common_segment_type
+       count(market_segment_type) as segment_type_count
 from hotelreservationdataset
 group by market_segment_type
-order by most_common_segment_type desc
+order by segment_type_count desc
 limit 1;
 
 -- 9)How many reservations have a booking status of Confirmed? 
-select count(*) as no_of_comfirmed_bookings
+select count(*) as no_of_confirmed_bookings
 from hotelreservationdataset
 where booking_status= 'Not_Canceled';
 
@@ -66,7 +66,7 @@ where no_of_children > 0;
 
 -- 12)How many reservations were made in each month of the year?
 select monthname(str_to_date(arrival_date, '%m/%d/%y')) as month ,
-	   MONTH(STR_TO_DATE(arrival_date, '%m/%d/%y')) AS month_number,
+	   month(str_to_date(arrival_date, '%m/%d/%y')) AS month_number,
 	   count(*) as total_reservations
 from hotelreservationdataset
 group by month, month_number
